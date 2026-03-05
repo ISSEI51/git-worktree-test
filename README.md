@@ -47,3 +47,17 @@ git status
 ```sh
 git worktree lsit
 ```
+
+## 8. マージ/リモートリポジトリにpush
+この操作は通常通りでOK
+```sh
+git push -u origin HEAD
+```
+
+## 9. wroktreeを消す
+削除は元のフォルダで行うのが安全
+```sh
+git worktree remove ../__wt_worktree-a
+git worktree prune
+```
+※git worktree prune は、**もう存在しない（または参照できない）worktreeの情報を、リポジトリ内部から掃除するコマンド**
