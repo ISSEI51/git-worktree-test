@@ -61,3 +61,8 @@ git worktree remove ../__wt_worktree-a
 git worktree prune
 ```
 ※git worktree prune は、**もう存在しない（または参照できない）worktreeの情報を、リポジトリ内部から掃除するコマンド**
+
+## 10. ClaudeCodeを並行稼働させる
+メインのフォルダに`./CLAUDE.md`を配置する
+
+worktreeを作成し作業開始
